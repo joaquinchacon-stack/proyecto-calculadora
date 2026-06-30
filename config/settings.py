@@ -79,7 +79,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": 'calculadora_db',
         'USER': 'root',
-        'PASSWORD': '',  # En Codespaces por defecto el usuario root local no tiene contraseña
+        'PASSWORD': 'root',  # En Codespaces por defecto el usuario root local no tiene contraseña
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
