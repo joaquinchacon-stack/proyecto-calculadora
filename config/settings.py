@@ -25,8 +25,10 @@ SECRET_KEY = "django-insecure-f*&5n$12s2q*x@agkgm4$ui4)x=)0h(ndci*uy$z3dgrhc%t16
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+# Le dice a Django que confíe en los formularios enviados desde las URLs de GitHub
+CSRF_TRUSTED_ORIGINS = ['https://*.github.dev', 'https://*.githubpreview.dev']
 
 # Application definition
 
