@@ -28,7 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Le dice a Django que confíe en los formularios enviados desde las URLs de GitHub
-CSRF_TRUSTED_ORIGINS = ['https://*.github.dev', 'https://*.githubpreview.dev']
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.github.dev',
+    'https://*.githubpreview.dev',
+    'https://*.app.github.dev', # <-- Esta es la clave nueva
+]
 
 # Application definition
 
